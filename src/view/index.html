@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<%= require('html-loader!./layout/html-head.html') %>
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title>mmall电商平台</title>
+</head>
 <body>
-12313 asf
-    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <%= require('html-loader!./layout/header.html') %>
+    <div>
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>

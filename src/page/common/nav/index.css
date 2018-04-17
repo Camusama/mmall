@@ -1,0 +1,27 @@
+/*
+* @Author: Marte
+* @Date:   2018-04-17 23:06:33
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-04-17 23:27:31
+*/
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.nav .user{
+    float: left;
+}
+.nav .user .link{
+    margin-right:5px;
+}
+.nav .user.login{
+    display: none;
+}
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display:inline-block;
+    margin-left: 5px;
+}

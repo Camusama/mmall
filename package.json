@@ -4,11 +4,10 @@
   "description": "mmall web",
   "main": "index.js",
   "scripts": {
-    "dev":"WEBPACK_ENV=dev webpack-dev-server --inline --port 8900",
-    "dist":"WEBPACK_ENV=online webpack -p",
-    "dev-win":"set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8900",
-    "dist-win":"set WEBPACK_ENV=online && webpack -p"
-
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8900",
+    "dist": "WEBPACK_ENV=online webpack -p",
+    "dev-win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8900",
+    "dist-win": "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {
     "type": "git",
@@ -31,5 +30,8 @@
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2"
+  }
 }
