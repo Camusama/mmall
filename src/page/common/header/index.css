@@ -2,5 +2,31 @@
 * @Author: Marte
 * @Date:   2018-04-17 23:37:35
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-17 23:37:37
+* @Last Modified time: 2018-04-18 16:35:11
 */
+.header .logo{
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    display: block;
+    font-size: 36px;
+    color:#c60023;
+    font-weight: bold;
+}
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size:15px;
+    outline: none;
+    border:2px solid #c60023;
+}
+.header .search-con .search-btn{
+    position:absolute;
+    height: 44px;
+    width: 80px;
+}
