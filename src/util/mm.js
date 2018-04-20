@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-17 16:10:09
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-17 20:25:22
+* @Last Modified time: 2018-04-19 19:56:28
 */
 
 'use strict';
@@ -14,18 +14,18 @@ var _mm={
     request : function(param){
         var _this = this;
         $.ajax({
-            url:       param.url || '',
-            type:      param.method ||'get',
-            dataType:  param.type ||'json',
-            data:      param.data ||'',
-            success :function(res){
+            type        : param.method  || 'get',
+            url         : param.url     || '',
+            dataType    : param.type    || 'json',
+            data        : param.data    || '',
+            success     : function(res){
                 //登录成功
                 if(0=== res.status){
                     typeof param.success === 'function' && param.success(res.data,res.msg);
                 }
                 //无登录状态 需要登录
                 else if(10 ===res.status ){
-                    _this.dologin();
+                    _this.doLogin();
                 }
                 //请求错误
                 else if(1 === res.status){
@@ -33,7 +33,7 @@ var _mm={
                 }
             },
             error :function(err){
-                typeof param.error === 'function' && param.error(res.statusText);
+                typeof param.error === 'function' && param.error(err.statusText);
             }
         });
 
@@ -62,7 +62,7 @@ var _mm={
         alert(msg||'操作失败！');
     },
     //字段验证，手机 ，邮箱，为空
-    validata : function(value ,type){
+    validate : function(value ,type){
         var value = $.trim(value);
         if ('require'===type) {
             return !!value;
@@ -78,7 +78,7 @@ var _mm={
     },
     //统一跳转
     doLogin: function(){
-        window.location.href = './login.html?redirect='+ encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect='+ encodeURIComponent(window.location.href);
     },
     goHome:function(){
         window.location.href='./index.html';

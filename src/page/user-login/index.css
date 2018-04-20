@@ -1,0 +1,85 @@
+/*
+* @Author: Marte
+* @Date:   2018-04-18 23:23:37
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-04-19 16:25:29
+*/
+/*外层容器*/
+.page-wrap{
+    background: #e72955;
+    padding: 40px 0;
+}
+/*表单*/
+.user-con{
+    position: relative;
+    width: 400px;
+    background:#fff;
+    margin: 0 auto;
+}
+.user-con .user-title{
+    text-align: center;
+    padding:10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+    color:#666;
+}
+.user-con .user-box{
+    padding: 20px;
+}
+.user-con .user-box .error-item{
+    position:relative;
+    padding:4px 0 4px 40px;
+    margin-bottom: 10px;
+    color:red;
+    border:1px solid red;
+    background:#fde9e9;
+    display: none;
+}
+.user-con .user-box .error-icon{
+    position:absolute;
+    left: 14px;
+    top: 50%;
+    font-size:14px;
+    margin-top: -7px;
+}
+.user-con .user-box .user-item{
+    position:relative;
+    margin-bottom:20px;
+}
+.user-con .user-item .user-label{
+    position:absolute;
+    left: 1px;
+    top:1px;
+    bottom: 1px;
+    width:40px;
+    line-height: 36px;
+    background:#f3f3f3;
+    font-size:18px;
+    color:#d3d3d3;
+    border-right: 1px solid #dbdbdb;
+    text-align: center;
+}
+.user-con .user-item .user-content{
+    padding:10px 0 10px 50px;
+    width:308px;
+    height: 18px;
+    line-height:18px;
+    font-size:15px;
+    outline: none;
+    border:1px solid #dbdbdb;
+}
+.user-con .btn-submit{
+    padding:2px 0;
+    width:100%;
+    text-align: center;
+    font-size:20px;
+}
+.user-con .link-item{
+    text-align:right;
+    margin-top:10px;
+}
+.user-con .link-item .link{
+    margin-left: 10px;
+    color:#999;
+}
