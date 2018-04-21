@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-17 23:37:26
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-18 16:34:40
+* @Last Modified time: 2018-04-20 23:05:52
 */
 
 'use strict';
@@ -12,6 +12,7 @@ var _mm     = require('util/mm.js');
 var header = {
     //通用该页面头部
     init : function(){
+        this.onLoad();
         this.bindEvent();
     },
     onload: function(){
@@ -41,7 +42,7 @@ var header = {
             window.location.href="./list.html?keyword="+keyword;
         }else{
         //为空 返回首页
-            _mm.goHome;
+            _mm.goHome();
         }
     },
 };

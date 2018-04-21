@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-19 16:28:51
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-19 20:48:06
+* @Last Modified time: 2018-04-21 15:04:48
 */
 
 'use strict';
@@ -13,10 +13,10 @@ require('page/common/nav-simple/index.js');
 var formError ={
     //表单错误提示
     show: function(errMsg){
-        $('.error-item').show().find('.error-msg').text(errMsg);
+        $('.error-item').show().find('.err-msg').text(errMsg);
     },
-    hide: function(errMsg){
-        $('.error-item').hide().find('.error-msg').text('');
+    hide: function(){
+        $('.error-item').hide().find('.err-msg').text('');
     },
 }
 
@@ -50,7 +50,7 @@ var page = {
     },
     submit: function(){
         var formData ={
-            usename: $.trim($('#username').val()),
+            username: $.trim($('#username').val()),
             password:$.trim($('#password').val()),
             passwordConfirm:$.trim($('#password-confirm').val()),
             phone:$.trim($('#phone').val()),

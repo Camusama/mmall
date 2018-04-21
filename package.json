@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8900",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8900",
     "dist": "WEBPACK_ENV=online webpack -p",
-    "dev-win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8900",
-    "dist-win": "set WEBPACK_ENV=online && webpack -p"
+    "dist_win": "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,6 @@
   },
   "author": "yang tb",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Camusama/mmall-fe/issues"
-  },
   "homepage": "https://github.com/Camusama/mmall-fe#readme",
   "devDependencies": {
     "css-loader": "^0.28.11",
@@ -27,11 +24,11 @@
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.20.3",
     "url-loader": "^0.6.2",
-    "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.5"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "hogan": "^1.0.2"
+    "hogan": "^1.0.2",
+    "webpack": "^1.13.2"
   }
 }

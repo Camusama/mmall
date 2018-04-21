@@ -2,23 +2,24 @@
 * @Author: Marte
 * @Date:   2018-04-16 15:28:45
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-19 21:48:55
+* @Last Modified time: 2018-04-21 14:20:28
 */
 
 'use strict';
 require('./index.css');
+require('page/common/nav-simple/index.js');
 var _mm =require('util/mm.js');
 var _user = require('service/user-service.js');
-require('page/common/nav-simple/index.js');
+
 var formError ={
     //表单错误提示
     show: function(errMsg){
-        $('.error-item').show().find('.error-msg').text(errMsg);
+        $('.error-item').show().find('.err-msg').text(errMsg);
     },
-    hide: function(errMsg){
-        $('.error-item').hide().find('.error-msg').text('');
+    hide: function(){
+        $('.error-item').hide().find('.err-msg').text('');
     },
-}
+};
 
 var page = {
     init: function(){
@@ -37,8 +38,8 @@ var page = {
     },
     submit: function(){
         var formData ={
-            usename: $.trim($('#username').val()),
-            password: $.trim($('#password').val()),
+            username: $.trim($('#username').val()),
+            password: $.trim($('#password').val())
         },
         validateResult = this.formValidate(formData);
         if(validateResult.status){
@@ -53,24 +54,24 @@ var page = {
             formError.show(validateResult.msg);
         }
     },
-    formValidate: function(formData){
-        var result={
-            status:false,
-            msg:''
+    formValidate : function(formData){
+        var result = {
+            status  : false,
+            msg     : ''
         };
-        if(!_mm.validate(formData.username,'require')){
+        if(!_mm.validate(formData.username, 'require')){
             result.msg = '用户名不能为空';
             return result;
         }
-        if(!_mm.validate(formData.password,'require')){
+        if(!_mm.validate(formData.password, 'require')){
             result.msg = '密码不能为空';
             return result;
         }
-        //通过验证，返回正确提示
-        result.status=true;
-        result.msg = '验证通过';
+        // 通过验证，返回正确提示
+        result.status   = true;
+        result.msg      = '验证通过';
         return result;
-    },
+    }
 };
 $(function(){
     page.init();
