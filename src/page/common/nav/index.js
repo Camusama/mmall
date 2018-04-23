@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-17 23:06:10
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-19 15:18:52
+* @Last Modified time: 2018-04-23 18:15:39
 */
 
 'use strict';
@@ -39,7 +39,7 @@ var nav = {
     // 加载用户信息
     loadUserInfo : function(){
         _user.checkLogin(function(res){
-            ('.user.not-login').hide().siblings('//.user.login').show().find('.username').text(res.username);
+            $('.user.not-login').hide().siblings('.user.login').show().find('.username').text(res.username);
         }, function(errMsg){
             // do nothing
         });

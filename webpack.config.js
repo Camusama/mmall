@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-15 22:32:27
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-20 23:32:31
+* @Last Modified time: 2018-04-23 14:39:58
 */
 var webpack =require("webpack");
 var Ex = require('extract-text-webpack-plugin');
@@ -19,7 +19,7 @@ var getHtmlConfig= function(name,title){
         title:title,
         inject:true,
         hash : true,
-        chunks:['common',name]
+        chunks:['common',name]//指定entry
     };
 };
 var config ={

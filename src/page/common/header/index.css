@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-17 23:37:35
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-18 16:35:11
+* @Last Modified time: 2018-04-23 13:51:58
 */
 .header .logo{
     position: absolute;
@@ -29,4 +29,13 @@
     position:absolute;
     height: 44px;
     width: 80px;
+}
+.crumb{
+    margin-bottom: 15px;
+    height: 50px;
+    background: #eee;
+    color:#888;
+    font-size:14px;
+    line-height:50px;
+    border-top: 2px solid #c60023;
 }

@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-17 20:27:16
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-17 22:59:09
+* @Last Modified time: 2018-04-23 14:43:09
 * css reset
 */
 *{
@@ -37,6 +37,23 @@ input[type="checkbox"]{
     margin:0 auto;
     position: relative;
     overflow: hidden;
+}
+.panel{
+    padding:10px;
+    margin-bottom:10px;
+    background:#fff;
+}
+.panel .panel-title{
+    padding:10px;
+    font-size:14px;
+    color:#666;
+    font-weight:bold;
+    border-bottom:1px solid #eee;
+
+}
+.panel .panel-body{
+    padding:10px;
+    overflow:hidden;
 }
 .hide{
     display:none;

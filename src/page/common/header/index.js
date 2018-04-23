@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-17 23:37:26
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-20 23:05:52
+* @Last Modified time: 2018-04-23 14:16:41
 */
 
 'use strict';
@@ -15,7 +15,7 @@ var header = {
         this.onLoad();
         this.bindEvent();
     },
-    onload: function(){
+    onLoad: function(){
         var keyword = _mm.getUrlParam('keyword');
         //keyword存在，则回填输入框
         if(keyword){
@@ -23,6 +23,7 @@ var header = {
         }
     },
     bindEvent : function(){
+        //闭包
         var _this=this;
         $('#search-btn').click(function(){
             _this.searchSubmit();
