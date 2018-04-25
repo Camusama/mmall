@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-04-15 22:32:27
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-24 23:46:00
+* @Last Modified time: 2018-04-25 16:01:23
 */
 var webpack =require("webpack");
 var Ex = require('extract-text-webpack-plugin');
@@ -28,6 +28,8 @@ var config ={
         'index'             : ['./src/page/index/index.js'],
         'list'             : ['./src/page/list/index.js'],
         'detail'            : ['./src/page/detail/index.js'],
+        'cart'            : ['./src/page/cart/index.js'],
+
         'user-login'        : ['./src/page/user-login/index.js'],
         'user-register'     : ['./src/page/user-register/index.js'],
         'user-pass-reset'   : ['./src/page/user-pass-reset/index.js'],
@@ -69,6 +71,8 @@ var config ={
         new Ex('css/[name].css'),
         //html模板
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart','购物车')),
+
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('list', '商品列表')),
         new HtmlWebpackPlugin(getHtmlConfig('detail', '商品详情页')),
