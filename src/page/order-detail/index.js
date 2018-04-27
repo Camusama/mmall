@@ -2,10 +2,9 @@
 * @Author: Marte
 * @Date:   2018-04-27 17:05:17
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-04-27 19:22:14
+* @Last Modified time: 2018-04-27 20:16:21
 */
 
-'use strict';
 'use strict';
 require('./index.css');
 require('page/common/nav/index.js');
