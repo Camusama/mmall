@@ -1,0 +1,22 @@
+/*
+* @Author: Marte
+* @Date:   2018-04-17 23:21:38
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-04-18 17:24:17
+*/
+.footer{
+    padding-bottom:  10px;
+}
+.links{
+    text-align: center;
+    color:#666;
+    line-height:30px;
+}
+.footer .links .link{
+    padding: 0 10px;
+}
+.copyright{
+    text-align:center;
+    color:#666;
+    line-height:30px;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "mmall web",
+  "main": "index.js",
+  "scripts": {
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8900",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8900",
+    "dist": "WEBPACK_ENV=online webpack -p",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camusama/mmall-fe.git"
+  },
+  "author": "yang tb",
+  "license": "ISC",
+  "homepage": "https://github.com/Camusama/mmall-fe#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.20.3",
+    "url-loader": "^0.6.2",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2",
+    "webpack": "^1.13.2"
+  }
+}
