@@ -21,6 +21,6 @@ view/里的html文件为静态模板，组件的动态template以index.string文
 打包 webpack生成dist文件夹<br>
 windows启动webpackdevserver npm run dev_win<br>
 
-测试接口需要使用proxy软件配置配置，service里的接口路径，有：/order/* ，/cart/* ，/shipping/* ，/product/* ，/user/* 劫持到 www.happymmall.com 的对应/xxx/路径请求后端接口<br>
+测试接口需要使用proxy软件配置，service里的接口路径，有：/order/* ，/cart/* ，/shipping/* ，/product/* ，/user/* 劫持到 www.happymmall.com 的对应/xxx/路径请求后端接口<br>
 
 
