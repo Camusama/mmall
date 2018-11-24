@@ -1,5 +1,5 @@
 # mmall-fe
-线上部署：http://mmall.yangtianbo.xin/mmall/
+线上部署：http://39.108.180.157:8080/mmall-dist/view/
 请求接口用nginx反向代理至test.happymmall.com<br>
 大部分后台数据集中在手机品类，部分商品详情及品类缺失，因为本来就没有数据<br>
 复杂的接口请求集中在购物车页面的增删改查及分页，以及支付页面的地址管理和增删改查<br>
